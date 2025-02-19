@@ -1,0 +1,72 @@
+.image-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.image-box {
+  width: 90%;
+  max-width: 250px;
+  height: 180px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color:#fff;
+}
+
+.image-box:hover{
+  background-color: rgb(255, 255, 255);
+  color:#222;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Selected state */
+.image-box.selected {
+  border: 2px solid #929292;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+/* Responsive design */
+@media (min-width: 600px) {
+  .image-box {
+    width: 45%;
+  }
+}
+
+@media (min-width: 900px) {
+  .image-box {
+    width: 30%;
+  }
+}
+
+.invoice-checkbox {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid red;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.invoice-checkbox:checked {
+  background-color: red;
+}

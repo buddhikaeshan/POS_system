@@ -1,0 +1,185 @@
+.invoice-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/*invoice style---------------------------------------------------------*/
+.invoice-2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  height: auto;
+}
+
+.invoice-header {
+  align-items: center;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+}
+
+.company-info {
+  text-align: left;
+}
+
+.invoice-title {
+  text-align: right;
+}
+
+.billing-details,
+.notes,
+.totals {
+  margin-top: 10px;
+}
+
+.billing-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 15%;
+}
+
+.invoice-info {
+  margin-top: 10px;
+}
+
+.invoice-table,
+.signature-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.invoice-table th,
+.invoice-table td,
+.signature-table th,
+.signature-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f2f2f2;
+}
+
+.signature-table th {
+  text-align: center;
+}
+
+.signature-table td {
+  width: 300px;
+  height: 150px;
+}
+
+.notes {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.totals {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.invoice-footer {
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.signature p {
+  margin: 0;
+}
+
+.details {
+  margin-bottom: 0px;
+}
+
+.form-input {
+  display: block;
+  outline: none;
+  width: 100%;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.date {
+  padding: 3px;
+}
+
+#table-sn {
+  width: 5%;
+}
+
+#tableDes {
+  width: 100%;
+}
+
+.table-row {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.row-hover {
+  background-color: #f8d7da;
+}
+
+.row-hover td {
+  color: #b52b38;
+  font-weight: bold;
+}
+
+/*option style---------------------------------------------------------*/
+.options {
+  display: block;
+  margin: 0 auto;
+}
+
+.invoice-type-label {
+  font-weight: bold;
+  font-size: 17px;
+  width: 80px;
+}
+
+.details {
+  display: flex;
+}
+
+.details label {
+  width: 100%;
+  padding-right: 15px;
+}
+
+.details input {
+  width: 200px;
+}
+
+.invoice-table .not-delivery {
+  color: red !important;
+  font-weight: bold;
+}
+
+.invoice-table .delivery {
+  color: rgb(0, 255, 47) !important;
+  font-weight: bold;
+}
+
+.delivery-details label,
+.delivery-details input,
+.delivery-details textArea,
+.delivery-details button {
+  font-size: 12px;
+}

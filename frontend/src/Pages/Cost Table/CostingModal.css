@@ -1,0 +1,72 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1050;
+    overflow-y: auto;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-centered {
+    margin-top: 50px; /* Add a margin to the top of the modal */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.suggestions-dropdown {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: auto;
+    overflow-y: auto;
+    z-index: 1000;
+    width: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestions-dropdown li {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.suggestions-dropdown li:hover {
+    background-color: #f8f9fa;
+}
+
+.suggestions-dropdown li:active {
+    background-color: #e9ecef;
+}

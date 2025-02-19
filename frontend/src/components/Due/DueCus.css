@@ -1,0 +1,97 @@
+/* DueCus.css */
+
+/* Styles for the main table (normal table) */
+.due-cus-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.due-cus-table th,
+.due-cus-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ccc; /* Slightly thicker borders for distinction */
+    font-size: 14px; /* Slightly larger font size */
+}
+
+.due-cus-table th {
+    background-color: #616263; /* Green background for header */
+    color: white; /* White text for header */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Alternating row colors for better readability */
+.due-cus-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.due-cus-table tr:hover {
+    background-color: #d1e7dd; /* Light green hover effect */
+    cursor: pointer;
+}
+
+/* Styles for the expanded rows */
+.expanded-row {
+    background-color: #f9f9f9;
+}
+
+/* Styles for the expanded table */
+.expanded-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+.expanded-table th,
+.expanded-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px; /* Slightly smaller font size for distinction */
+}
+
+.expanded-table th {
+    background-color: #89b9e6; /* Blue background for header */
+    color: white; /* White text for header */
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.expanded-table tr:nth-child(even) {
+    background-color: #f7faff;
+}
+
+.expanded-table tr:hover {
+    background-color: #e2edff; /* Light blue hover effect */
+    cursor: pointer;
+}
+
+/* Button styles */
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Scrolling container */
+.scrolling-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
